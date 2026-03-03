@@ -25,5 +25,6 @@ public class LevelManager : MonoBehaviour
     {
         _currentLevel = Instantiate(levelPrefabs[currentLevelNo -1 ]);
         _currentLevel.transform.position = Vector3.zero;
+        _currentLevel.StartLevel();
     }
 }
